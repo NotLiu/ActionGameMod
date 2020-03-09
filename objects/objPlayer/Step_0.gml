@@ -53,7 +53,6 @@ if(out == true && alarm[0] == -1){ //reset timer, launches player up
 	if(move_set == 1 && alive == true){
 		objGameManager.score_2 -= 1;	
 	}
-	
 
 	alarm[0] = 100;
 }
