@@ -9,7 +9,7 @@ y_vel = 0;
 
 jump_vel = -16;
 x_accel = .85;
-x_decel = 0.03;
+x_decel = 0.08;
 
 x_move_vel = 0;
 y_move_vel = 0;

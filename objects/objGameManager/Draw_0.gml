@@ -16,4 +16,14 @@ else{
 	draw_text_color(camera_get_view_x(view_camera[0])+room_width-70, camera_get_view_y(view_camera[0])+20, string(score_2), c_lime, c_lime, c_green, c_green, 1);
 }
 
+//draw height
+var player_high = min(inst_361EDD44.y, inst_AC7B74C.y);
+var height = (room_height - player_high) div 10;
+
+if(height < 0){
+	height = 0;	
+}
+
+draw_text_color(camera_get_view_x(view_camera[0])+310, camera_get_view_y(view_camera[0])+20, string(height)+"ft", c_white, c_white, c_teal, c_teal, 1);
+
 //draw_text_color(100,800, string(objGameManager.red_score), c_red, c_red, c_maroon, c_maroon, 1);
