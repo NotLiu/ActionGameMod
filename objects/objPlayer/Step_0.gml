@@ -167,4 +167,7 @@ if (y > room_height + sprite_height - 100) {
 	}
 }
 
+
+
+
 show_debug_message("moveset: "+string(move_set)+"..."+string(y));

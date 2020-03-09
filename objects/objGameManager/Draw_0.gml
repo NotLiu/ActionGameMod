@@ -23,6 +23,9 @@ var height = (room_height - player_high) div 10;
 if(height < 0){
 	height = 0;	
 }
+if(global.max_height<height){
+	global.max_height = height;	
+}
 
 draw_text_color(camera_get_view_x(view_camera[0])+310, camera_get_view_y(view_camera[0])+20, string(height)+"ft", c_white, c_white, c_teal, c_teal, 1);
 

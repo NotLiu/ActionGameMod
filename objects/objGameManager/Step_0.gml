@@ -36,6 +36,16 @@ with(objCloud){
 	show_debug_message("CLOUD TOO FAR AWAY DELETING NOW");
 }
 
+if(score_1 >= 10 || score_2 <= -1 && room != room2){
+	global.winner = "RED";
+	room_goto_next();
+}
+if(score_2 >= 10 || score_1 <= -10 && room != room2){
+	global.winner = "GREEN";
+	room_goto_next();
+}
+
+
 if(keyboard_check(ord("3")) && keyboard_check(ord("6"))){
 	game_restart();	
 }

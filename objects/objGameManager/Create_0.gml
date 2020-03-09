@@ -12,6 +12,9 @@ score_2 = 1;
 cloud_count = 0;
 cloud_depth = 0;
 
+global.max_height = 0;
+global.winner = "NOONE";
+
 //create around 5 clouds upon game creation.
 cloud_list_x = ds_list_create();
 cloud_list_y = ds_list_create();
