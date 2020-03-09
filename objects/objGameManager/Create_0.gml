@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+//commit project gms2 test
+
 //resets randomizer seed, otherwise sed remains the same
 randomize();
 
