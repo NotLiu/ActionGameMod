@@ -63,10 +63,9 @@ var sy = sign(y_vel);
 var colliding_with = noone;
 var colliding_player = noone;
 
-if(out==false && alive){
+if(out==false && alive && y<camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])+sprite_height){
 	while(y_move_vel != 0){
 		var colliding = false;
-		
 		
 		if(sy >= 0){
 			colliding_with = instance_place(x, y+sy, objCloud);
@@ -167,5 +166,5 @@ if (y > room_height + sprite_height - 100) {
 		gravity_vel = .5;
 	}
 }
-show_debug_message("out"+string(move_set)+string(out));
-show_debug_message("alive"+string(move_set)+string(alive));
+
+show_debug_message("moveset: "+string(move_set)+"..."+string(y));
