@@ -63,7 +63,7 @@ var sy = sign(y_vel);
 var colliding_with = noone;
 var colliding_player = noone;
 
-if(out==false && alive && y<camera_get_view_y(view_camera[0])+camera_get_view_height(view_camera[0])+sprite_height){
+if(out==false && alive ){
 	while(y_move_vel != 0){
 		var colliding = false;
 		
@@ -146,6 +146,7 @@ if(alive == false){
 
 if (y > room_height + sprite_height - 100) {
 	//spawn stars
+	x = 1000;
 	if(out == false){
 		scr_star_burst();
 		audio_play_sound(snd_suicide, 10, false);
