@@ -11,6 +11,6 @@ else{
 }
 draw_set_font(font01);
 
-draw_text_transformed_color(50,400, text_score,3,3,0,c_white,c_white,c_white,c_white,1);
+draw_text_transformed_color(30,400, text_score,2.5,2.5,0,c_white,c_white,c_white,c_white,1);
 
 draw_text_transformed_color(60,500, "Press space to restart!",2,2,0,c_white,c_white,c_white,c_white,1);
