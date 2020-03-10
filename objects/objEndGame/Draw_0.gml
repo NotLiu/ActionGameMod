@@ -3,9 +3,14 @@
 
 draw_set_font(font0);
 
-draw_text_transformed_color(130,250, text,3,3,0,c_white,c_white,c_white,c_white,1);
-
+if(global.winner == "RED"){
+	draw_text_transformed_color(130,250, text,3,3,0,c_red,c_red,c_red,c_red,1);
+}
+else{
+	draw_text_transformed_color(40,250, text,3,3,0,c_green,c_green,c_green,c_green,1);
+}
 draw_set_font(font01);
 
 draw_text_transformed_color(50,400, text_score,3,3,0,c_white,c_white,c_white,c_white,1);
 
+draw_text_transformed_color(60,500, "Press space to restart!",2,2,0,c_white,c_white,c_white,c_white,1);

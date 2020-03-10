@@ -10,7 +10,7 @@ if(alarm[0] == -1 && cloud_count < 15){ //alarm[0] == -1 is necessary so we don'
 with(objCloud){
 	var player_high = min(inst_361EDD44.y, inst_AC7B74C.y);
 	
-	if(y-player_high > 700 ||  y-player_high < -550){
+	if(y-player_high > 550 ||  y-player_high < -550){
 			instance_destroy(id);
 			scr_remove_cloud(id);
 			
@@ -36,7 +36,7 @@ with(objCloud){
 	show_debug_message("CLOUD TOO FAR AWAY DELETING NOW");
 }
 
-if(score_1 >= 10 || score_2 <= -1 && room != room2){
+if(score_1 >= 10 || score_2 <= -10 && room != room2){
 	global.winner = "RED";
 	room_goto_next();
 }
@@ -51,3 +51,4 @@ if(keyboard_check(ord("3")) && keyboard_check(ord("6"))){
 }
 
 show_debug_message("CLOUD #: "+ string(cloud_count));
+

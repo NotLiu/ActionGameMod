@@ -41,6 +41,10 @@ for(i = 0; i < random_range(4,6); i++){
 	
 }
 
+//instance_create_layer(0,0,"Instances",objBG);
+
+
+
 /*create 2 players instances
 for(i=0; i<2; i+=1){
 	var player = instance_create_layer(irandom_range(50, room_width-50),irandom_range(400,940), "Instances", objPlayer);
