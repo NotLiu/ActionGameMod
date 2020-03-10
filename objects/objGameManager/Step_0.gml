@@ -10,7 +10,7 @@ if(alarm[0] == -1 && cloud_count < 15){ //alarm[0] == -1 is necessary so we don'
 with(objCloud){
 	var player_high = min(inst_361EDD44.y, inst_AC7B74C.y);
 	
-	if(y-player_high > 550 ||  y-player_high < -550){
+	if(y-player_high > 525 ||  y-player_high < -525){
 			instance_destroy(id);
 			scr_remove_cloud(id);
 			
