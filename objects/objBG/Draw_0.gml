@@ -11,6 +11,6 @@ color_height = height div 6;
 
 image_alpha = (100 - color_height)/100;
 
-show_debug_message(image_alpha);
+//show_debug_message(image_alpha);
 
 draw_self();

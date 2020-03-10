@@ -3,7 +3,7 @@
 
 //limit cloud count to 30
 if(alarm[0] == -1 && cloud_count < 15){ //alarm[0] == -1 is necessary so we don't continuously reset alarm timer
-	alarm[0] = 80;
+	alarm[0] = 50;
 }
 
 //remove clouds that are too far away
@@ -17,7 +17,7 @@ with(objCloud){
 			//create some more clouds to replace
 			if(inst_361EDD44.alive && inst_AC7B74C.alive){
 			var cloud_x = irandom_range(30, room_width-30);
-			var cloud_y = irandom_range(camera_get_view_y(view_camera[0])-70,camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - 150);
+			var cloud_y = irandom_range(camera_get_view_y(view_camera[0]),camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - 150);
 	
 	
 			if( ! scr_check_in_array(objGameManager.cloud_list_x, cloud_x) && ! scr_check_in_array(objGameManager.cloud_list_y, cloud_y)){
@@ -33,7 +33,7 @@ with(objCloud){
 
 			}
 	}
-	show_debug_message("CLOUD TOO FAR AWAY DELETING NOW");
+	//show_debug_message("CLOUD TOO FAR AWAY DELETING NOW");
 }
 
 if(score_1 >= 10 || score_2 <= -10 && room != room2){
