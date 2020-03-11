@@ -4,4 +4,4 @@
 instance_destroy(id);
 scr_remove_cloud(id);
 objGameManager.cloud_count -= 1;
-show_debug_message("DELETE ME NOWWWWWWWWWWWWWWWWWWWWWW");
+//show_debug_message("DELETE ME NOWWWWWWWWWWWWWWWWWWWWWW");
