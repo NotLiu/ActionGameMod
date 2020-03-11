@@ -4,7 +4,7 @@
 
 for(var i=0; i<irandom_range(1,4); i+=1){
 	var cloud_x = irandom_range(70, room_width-70);
-	var cloud_y = irandom_range(camera_get_view_y(view_camera[0])-70,camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - 150);
+	var cloud_y = irandom_range(camera_get_view_y(view_camera[0]),camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - 150);
 	
 	
 	if( ! scr_check_in_array(cloud_list_x, cloud_x) && ! scr_check_in_array(cloud_list_y, cloud_y)){

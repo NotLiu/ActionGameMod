@@ -17,7 +17,7 @@ with(objCloud){
 			//create some more clouds to replace
 			if(inst_361EDD44.alive && inst_AC7B74C.alive){
 			var cloud_x = irandom_range(30, room_width-30);
-			var cloud_y = irandom_range(camera_get_view_y(view_camera[0]),camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - 150);
+			var cloud_y = irandom_range(camera_get_view_y(view_camera[0])+30,camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0]) - 150);
 	
 	
 			if( ! scr_check_in_array(objGameManager.cloud_list_x, cloud_x) && ! scr_check_in_array(objGameManager.cloud_list_y, cloud_y)){

@@ -12,8 +12,11 @@ if(alarm[1] == -1 && room != room1 && room != room2){
 
 show_debug_message("x "+string(x));
 
+/*
 if(room != room1 && room != room2){
 	if(inst_361EDD44.out == 1 && inst_AC7B74C.out == 1){
+		show_debug_message("eowinefoiwnefowienfwoeifnweoifnweofiwnefoiwnefowienfwoeinweofn");
 		instance_destroy(id);
 	}
 }
+*/

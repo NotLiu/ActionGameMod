@@ -11,6 +11,6 @@ if(height < 0){
 color_height = height div 5;
 
 image_alpha = (color_height)/100;
-show_debug_message(image_alpha);
+//show_debug_message(image_alpha);
 
 draw_self();
