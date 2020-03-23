@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-image_speed = random_range(0.05,0.5);
-depth = 100;
+shake = false;
+camera_set_view_pos(view_camera[0], 0, 0);	

@@ -10,7 +10,7 @@ if(alarm[1] == -1 && room != room1 && room != room2){
 	alarm[1] = 1000;	
 }
 
-show_debug_message("x "+string(x));
+//show_debug_message("x "+string(x));
 
 /*
 if(room != room1 && room != room2){

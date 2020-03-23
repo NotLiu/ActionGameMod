@@ -20,6 +20,8 @@ max_x_vel = 10;
 out = true; //start with player out of bounds and then launch after delay
 alive = true;
 
+shake = true //screen shake
+
 if(move_set == 1){
 		sprite_index = sprite7;
 }
@@ -32,3 +34,4 @@ part_type_sprite(part, sprite19, 0, 0, 0);
 part_type_size(part, .5, 1, -0.1, .1);
 part_type_color3(part, c_white, c_teal, c_silver);
 part_type_alpha2(part, 1, .8);
+part_type_life(part,20,30);

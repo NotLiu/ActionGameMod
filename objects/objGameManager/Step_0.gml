@@ -59,5 +59,5 @@ if(keyboard_check(ord("3")) && keyboard_check(ord("6"))){
 	game_restart();	
 }
 
-show_debug_message("CLOUD #: "+ string(cloud_count));
+//show_debug_message("CLOUD #: "+ string(cloud_count));
 

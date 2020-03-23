@@ -87,7 +87,7 @@ if(out==false && alive ){
 			}
 			
 			if(colliding_player != noone && y<875){ // colliding with player
-				
+				shake = true;
 				if( place_meeting(x, y, colliding_player) == false){
 					colliding = true;
 					
@@ -170,7 +170,15 @@ if (y > room_height + sprite_height - 100) {
 	}
 }
 
+if(shake == true){
+	camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0])+irandom_range(-30,30),camera_get_view_y(view_camera[0])+irandom_range(-30,30))	
+}
+
+if(alarm[1] == -1){
+	alarm[1] = 30;	
+}
 
 
 
+//show_debug_message("shake"+string(shake));
 //show_debug_message("moveset: "+string(move_set)+"..."+string(y));
