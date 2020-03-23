@@ -73,6 +73,9 @@ if(out==false && alive ){
 			if(colliding_with != noone){ // colliding with cloud
 				
 				if( place_meeting(x, y, colliding_with) == false){
+					part_emitter_region(part, emitter, x-60, x, y,y+20, ps_shape_ellipse, ps_distr_gaussian);
+					part_emitter_burst(part, emitter, type, irandom(3));
+					
 					audio_play_sound(snd_jump, 10, false);
 					colliding = true;
 					

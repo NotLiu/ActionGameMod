@@ -23,3 +23,12 @@ alive = true;
 if(move_set == 1){
 		sprite_index = sprite7;
 }
+
+part = part_system_create();
+type = part_type_create();
+emitter = part_emitter_create(part);
+
+part_type_sprite(part, sprite19, 0, 0, 0);
+part_type_size(part, .5, 1, -0.1, .1);
+part_type_color3(part, c_white, c_teal, c_silver);
+part_type_alpha2(part, 1, .8);
