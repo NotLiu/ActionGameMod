@@ -5,6 +5,7 @@
 
 //resets randomizer seed, otherwise sed remains the same
 randomize();
+audio_play_sound(main8, 10, false);
 
 score_1 = 1;
 score_2 = 1;

@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if(!audio_is_playing(main8) && !audio_is_playing(mainCont)){
+	audio_play_sound(mainCont, 10, true);	
+}
+
 //limit cloud count to 30
 if(alarm[0] == -1 && cloud_count < 15){ //alarm[0] == -1 is necessary so we don't continuously reset alarm timer
 	alarm[0] = 50;

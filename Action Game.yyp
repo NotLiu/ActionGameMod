@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "07ac5800-54da-4ffa-a555-76929ecf170e",
+            "Value": {
+                "id": "869f797d-9364-4a43-a098-7cb685737a59",
+                "resourcePath": "sounds\\results\\results.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0dad5a35-58d6-4565-b1ee-17201a594622",
             "Value": {
                 "id": "697d4caa-6d91-46a6-b6d2-f178fc2fe3cc",
@@ -108,6 +116,14 @@
                 "id": "467190af-4501-4c7e-860b-c9eb31c1b7f7",
                 "resourcePath": "scripts\\scr_check_in_array\\scr_check_in_array.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "323b9ec7-27f6-4a9f-bd4c-3acd9c4d43fb",
+            "Value": {
+                "id": "d8b13f4b-78fc-4143-8a27-70dd3412e671",
+                "resourcePath": "sounds\\title\\title.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -300,6 +316,14 @@
                 "id": "31377f11-fa67-48cf-bd5c-48119f1c1fdf",
                 "resourcePath": "options\\windowsuap\\options_windowsuap.yy",
                 "resourceType": "GMWindowsUAPOptions"
+            }
+        },
+        {
+            "Key": "7e8e4af7-690c-4516-b655-47e5350dd650",
+            "Value": {
+                "id": "483bb7ac-69a2-4d45-a40a-940756b82a16",
+                "resourcePath": "sounds\\mainCont\\mainCont.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -524,6 +548,14 @@
                 "id": "c52bd91e-7192-4e2a-82bd-3fd6b750df75",
                 "resourcePath": "sprites\\sprite9\\sprite9.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "df3a4d18-da84-41f3-b170-ee9b98a86511",
+            "Value": {
+                "id": "e65f7de1-8307-4f0c-9fd9-345824938df4",
+                "resourcePath": "sounds\\main8\\main8.yy",
+                "resourceType": "GMSound"
             }
         },
         {
