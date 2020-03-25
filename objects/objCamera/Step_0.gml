@@ -9,14 +9,15 @@ cam_height = camera_get_view_height(cam_id);
 //y += (target.y-y) * scroll_spd;
 
 
+
 //camera_set_view_pos(cam_id, x, clamp(y, 0, room_height)-cam_height*0.5);
 
 var player_high = min(inst_361EDD44.y, inst_AC7B74C.y); // get highest player position
 
 if(player_high > room_height-cam_height+10){
-	camera_set_view_pos(cam_id, x+35, room_height-cam_height);
+	camera_set_view_pos(cam_id, x+x_move, room_height-cam_height);
 }
 else{
-	camera_set_view_pos(cam_id, x+35, player_high - 25);
+	camera_set_view_pos(cam_id, x+x_move, player_high - 25);
 }
 camera_set_view_size(cam_id, origx, origy);

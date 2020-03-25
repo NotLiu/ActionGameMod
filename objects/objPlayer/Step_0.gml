@@ -49,9 +49,15 @@ if(out == true && alarm[0] == -1){ //reset timer, launches player up
 	
 	if(move_set == 0 && alive == true){
 		objGameManager.score_1 -= 1;	
+		if(global.max_height != 0){
+			score_shake_1 = true;
+		}
 	}
 	if(move_set == 1 && alive == true){
-		objGameManager.score_2 -= 1;	
+		objGameManager.score_2 -= 1;
+		if(global.max_height != 0){
+			score_shake_2 = true;
+		}
 	}
 
 	alarm[0] = 100;
@@ -80,6 +86,7 @@ if(out==false && alive ){
 					colliding = true;
 					
 					colliding_with.image_speed = 2;
+					colliding_with.y += 10
 					
 					scr_remove_cloud(colliding_with);
 					objGameManager.cloud_count -= 1;
@@ -87,11 +94,11 @@ if(out==false && alive ){
 			}
 			
 			if(colliding_player != noone && y<875){ // colliding with player
-				shake = true;
 				if( place_meeting(x, y, colliding_player) == false){
 					colliding = true;
 					
 					if(move_set == 0 && colliding_player.y < 870){
+						shake = true;
 						with(colliding_player){
 							//spawn stars
 							scr_star_burst();
@@ -100,12 +107,14 @@ if(out==false && alive ){
 							image_index = sprite6;
 							alive = false;
 							objGameManager.score_1 += 1;
+							score_shake_1 = true;
 							
 							x_vel = 0;
 							gravity_vel = 15;
 						}
 					}
 					if(move_set == 1 && colliding_player.y < 870){
+						shake = true;
 						with(colliding_player){
 							//spawn stars
 							scr_star_burst();
@@ -114,6 +123,7 @@ if(out==false && alive ){
 							image_index = sprite8;
 							alive = false;
 							objGameManager.score_2 += 1;
+							score_shake_2 = true;
 							
 							x_vel = 0;
 							gravity_vel = 15;
@@ -154,6 +164,9 @@ if (y > room_height + sprite_height - 100) {
 		audio_play_sound(snd_suicide, 10, false);
 	}
 	
+	if(global.max_height != 0 && out != true){
+		shake = true;
+	}
 	out = true;
 	
 	if(move_set == 0){
@@ -171,11 +184,24 @@ if (y > room_height + sprite_height - 100) {
 }
 
 if(shake == true){
-	camera_set_view_pos(view_camera[0], camera_get_view_x(view_camera[0])+irandom_range(-30,30),camera_get_view_y(view_camera[0])+irandom_range(-30,30))	
+	objCamera.x_move = irandom_range(25,45);
 }
 
-if(alarm[1] == -1){
-	alarm[1] = 30;	
+if(score_shake_1 = true){
+	objGameManager.score_y_1 = irandom_range(10,30);
+}
+if(score_shake_2 = true){
+	objGameManager.score_y_2 = irandom_range(10,30);	
+}
+
+if(shake == true && alarm[1] == -1){
+	alarm[1] = 15;	
+}
+if(score_shake_1 = true && alarm[2] == -1){
+	alarm[2] = 15;	
+}
+if(score_shake_2 = true && alarm[3] == -1){
+	alarm[3] = 15;	
 }
 
 

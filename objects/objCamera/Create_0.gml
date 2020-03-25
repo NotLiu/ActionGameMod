@@ -9,3 +9,5 @@ origy = 545;
 
 zoom_x = 0.5;
 zoom_y = 0.4;
+
+x_move = 35;

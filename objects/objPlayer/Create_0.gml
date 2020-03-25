@@ -20,7 +20,9 @@ max_x_vel = 10;
 out = true; //start with player out of bounds and then launch after delay
 alive = true;
 
-shake = true //screen shake
+shake = false; //screen shake
+score_shake_1 = false; //score shake
+score_shake_2 = false; //score shake
 
 if(move_set == 1){
 		sprite_index = sprite7;

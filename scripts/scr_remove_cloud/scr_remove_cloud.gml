@@ -8,7 +8,7 @@ for(var i = 0; i<array_length_1d(cloud_x); i += 1){
 			ds_list_delete(cloud_x, i);
 		}
 		
-		if(cloud.y == cloud_y[i]){
+		if(cloud.y-10 == cloud_y[i]){
 			ds_list_delete(cloud_y, i);
 		}
 }

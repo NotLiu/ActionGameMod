@@ -8,6 +8,8 @@ randomize();
 
 score_1 = 1;
 score_2 = 1;
+score_y_1 = 20;
+score_y_2 = 20;
 
 cloud_count = 0;
 cloud_depth = 0;
